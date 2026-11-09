@@ -1,7 +1,7 @@
 import {useEffect,useMemo,useState} from 'react';
 import {Link,Route,Routes,useParams} from 'react-router-dom';
 import {QRCodeSVG} from 'qrcode.react';
-import {createClient,Session} from '@supabase/supabase-js';
+import {createClient, type Session} from '@supabase/supabase-js';
 
 const url=import.meta.env.VITE_SUPABASE_URL as string, key=import.meta.env.VITE_SUPABASE_ANON_KEY as string;
 const sb=createClient(url||'',key||'');
