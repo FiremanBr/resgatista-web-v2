@@ -132,4 +132,6 @@
 .template-editor{padding-top:15px;border-top:1px solid #e7edf4;margin-top:15px}
 .template-editor textarea{min-height:220px}
 .template-editor .buttons{justify-content:flex-end}
-\n/* Histórico de provas e edição direta de questões */\n.history-item{display:grid;gap:6px;padding:9px;border:1px solid #e6edf4;border-radius:9px;background:#f7f9fc}.history-item.selected{border-color:#80b2e5;background:#eef6ff}.history-item>.class{padding:5px;background:transparent}.history-item>.outline{justify-self:start;font-size:11px;padding:7px 10px}.question-editor textarea{min-height:280px;font-family:monospace}.question-editor .buttons{justify-content:flex-end}\n
+
+/* Histórico de provas e edição direta de questões */
+.history-item{display:grid;gap:6px;padding:9px;border:1px solid #e6edf4;border-radius:9px;background:#f7f9fc}.history-item.selected{border-color:#80b2e5;background:#eef6ff}.history-item>.class{padding:5px;background:transparent}.history-item>.outline{justify-self:start;font-size:11px;padding:7px 10px}.question-editor textarea{min-height:280px;font-family:monospace}.question-editor .buttons{justify-content:flex-end}
