@@ -52,3 +52,19 @@
  .chart-track{height:9px}
  .chart-track>span{print-color-adjust:exact;-webkit-print-color-adjust:exact}
 }
+
+
+/* Refinamento do quadro de pontuação por aluno */
+.student-chart-card .row{align-items:center;flex-wrap:wrap}
+.student-chart-card .row h3{margin:0}
+.student-chart-card .row .buttons{margin-left:auto;flex-wrap:wrap;justify-content:flex-end}
+.student-chart-row{grid-template-columns:minmax(90px,145px) minmax(70px,1fr) 54px 62px;gap:12px;padding:7px 0;border-bottom:1px solid #f0f3f7}
+.student-chart-row:last-child{border-bottom:0}
+.student-chart-row .student-name{font-size:12px;font-weight:600;color:#2c4058;white-space:normal;overflow-wrap:anywhere}
+.student-chart-row .chart-track{height:12px;background:#edf2f7}
+.student-chart-row .student-score{font:800 13px Manrope;color:#213f60;white-space:nowrap}
+.student-chart-row .student-score small{font:500 10px 'DM Sans';color:#8a98a9;margin-left:2px}
+.student-chart-row .link{justify-self:end;border:1px solid #f0d6d6;background:#fff7f7;color:#b83232;border-radius:7px;padding:6px 9px;font-size:10px;line-height:1}
+.student-chart-row .link:hover{background:#ffeded;border-color:#e9bcbc}
+@media(max-width:560px){.student-chart-row{grid-template-columns:minmax(72px,100px) minmax(55px,1fr) 48px 55px;gap:7px}.student-chart-row .student-name{font-size:11px}.student-chart-row .link{padding:6px 7px}.student-chart-card .row .buttons{width:100%;justify-content:space-between}}
+@media print{.student-chart-row{grid-template-columns:minmax(75px,120px) minmax(0,1fr) 48px 45px;gap:6px}.student-chart-row .link{display:none}}
