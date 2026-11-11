@@ -1,7 +1,7 @@
 {
-  "name": "resgatista-web-v2",
+  "name": "resgatista-web-3",
   "private": true,
-  "version": "0.1.0",
+  "version": "3.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
