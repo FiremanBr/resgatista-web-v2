@@ -23,3 +23,6 @@ button:not(:disabled):hover{transform:translateY(-1px);box-shadow:0 5px 13px #17
 .kpis strong{color:#176fc2}
 .class.selected{box-shadow:inset 3px 0 #176fc2}
 @media(max-width:560px){.shell>header{height:64px}.shell>header>span{display:none}.login-v3{padding:25px}.login-v3 h1{font-size:27px}}
+
+/* Editor visual de questões — Resgatista Web 3.0 */
+.question-list{display:grid;gap:10px;margin:18px 0}.question-edit{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:14px;border:1px solid var(--line,#dbe3ee);border-radius:12px;background:var(--surface,#fff)}.question-edit p{margin:6px 0;color:var(--text,#172033)}.question-edit small{color:var(--muted,#64748b)}.question-edit .buttons{flex-shrink:0}.notice{margin:16px 0;padding:14px 16px;border:1px solid #e7c98a;border-radius:12px;background:#fff8e8;color:#755015;line-height:1.5}.form textarea{width:100%;resize:vertical}.form select{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;color:#172033}@media(max-width:640px){.question-edit{display:grid}.question-edit .buttons{width:100%}.question-edit .buttons button{flex:1}}
