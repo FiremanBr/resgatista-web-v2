@@ -68,3 +68,41 @@
 .student-chart-row .link:hover{background:#ffeded;border-color:#e9bcbc}
 @media(max-width:560px){.student-chart-row{grid-template-columns:minmax(72px,100px) minmax(55px,1fr) 48px 55px;gap:7px}.student-chart-row .student-name{font-size:11px}.student-chart-row .link{padding:6px 7px}.student-chart-card .row .buttons{width:100%;justify-content:space-between}}
 @media print{.student-chart-row{grid-template-columns:minmax(75px,120px) minmax(0,1fr) 48px 45px;gap:6px}.student-chart-row .link{display:none}}
+
+
+/* Garantir todos os dados do aluno em uma única linha */
+.student-chart-row{
+  display:flex!important;
+  flex-wrap:nowrap!important;
+  align-items:center!important;
+  gap:9px!important;
+  min-width:0;
+  padding:9px 0;
+}
+.student-chart-row .student-name{
+  flex:0 0 clamp(58px,19%,115px);
+  min-width:0;
+  white-space:nowrap!important;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.student-chart-row .chart-track{
+  flex:1 1 auto;
+  min-width:28px;
+}
+.student-chart-row .student-score{
+  flex:0 0 34px;
+  text-align:right;
+}
+.student-chart-row .link{
+  flex:0 0 auto;
+  white-space:nowrap;
+  margin:0;
+}
+@media(max-width:560px){
+  .student-chart-row{gap:6px!important}
+  .student-chart-row .student-name{flex-basis:58px;font-size:10px}
+  .student-chart-row .chart-track{min-width:25px}
+  .student-chart-row .student-score{flex-basis:30px;font-size:11px}
+  .student-chart-row .link{padding:5px 6px;font-size:9px}
+}
