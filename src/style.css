@@ -106,3 +106,8 @@
   .student-chart-row .student-score{flex-basis:30px;font-size:11px}
   .student-chart-row .link{padding:5px 6px;font-size:9px}
 }
+
+
+/* Indicador de sincronização ao vivo do painel */
+.live-status{display:flex;align-items:center;gap:7px;margin:0 0 10px 2px;color:#60758c;font-size:11px;font-weight:600}
+.live-dot{width:8px;height:8px;border-radius:50%;background:#22a06b;box-shadow:0 0 0 3px #22a06b1c;flex:0 0 8px}
