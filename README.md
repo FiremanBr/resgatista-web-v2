@@ -10,6 +10,8 @@ Plataforma de avaliações do Resgatista, evoluída a partir da versão Web 2.0.
 - Prova pública por link/QR Code.
 - Correção no servidor: o gabarito não é enviado ao aluno.
 - Painel de resultados, notas e estatísticas por questão.
+- Nova interface responsiva Web 3.0.
+- Modo de apresentação dos resultados em tela cheia.
 - Atualização em tempo real.
 - Exclusão individual e reinicialização com PIN.
 - Modo de apresentação em tela cheia, com indicadores da turma e desempenho por questão.
