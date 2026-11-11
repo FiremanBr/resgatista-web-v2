@@ -30,3 +30,25 @@
  .question-result{break-inside:avoid}
  .result-track span{print-color-adjust:exact;-webkit-print-color-adjust:exact}
 }
+
+/* Gráficos comparativos de questões e notas */
+.charts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.chart-card{min-width:0}
+.bar-chart{display:grid;gap:13px;margin-top:18px}
+.chart-row,.student-chart-row{display:grid;grid-template-columns:38px minmax(0,1fr) 42px;align-items:center;gap:9px;font-size:11px}
+.chart-row>b{color:#31516f}
+.chart-row>strong,.student-chart-row>strong{text-align:right;color:#234b70;font-size:11px;font-variant-numeric:tabular-nums}
+.chart-track{height:13px;border-radius:99px;background:#edf1f5;overflow:hidden}
+.chart-track>span{display:block;height:100%;border-radius:99px;background:#25865a;min-width:0}
+.student-chart-row{grid-template-columns:minmax(65px,115px) minmax(0,1fr) 35px}
+.student-chart-row>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#40536b}
+.chart-track>span.student-pass{background:#247bba}
+.chart-track>span.student-fail{background:#c64a4a}
+@media(max-width:850px){.charts-grid{grid-template-columns:1fr}}
+@media print{
+ .charts-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .chart-card{padding:10px}
+ .bar-chart{gap:7px;margin-top:10px}
+ .chart-track{height:9px}
+ .chart-track>span{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+}
