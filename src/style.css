@@ -112,3 +112,12 @@
 /* Indicador de sincronização ao vivo do painel */
 .live-status{display:flex;align-items:center;gap:7px;margin:0 0 10px 2px;color:#60758c;font-size:11px;font-weight:600}
 .live-dot{width:8px;height:8px;border-radius:50%;background:#22a06b;box-shadow:0 0 0 3px #22a06b1c;flex:0 0 8px}
+
+
+/* Modo online de apresentação dos resultados */
+.presentation-mode{grid-template-columns:minmax(0,1fr)!important}
+.presentation-mode>aside,.presentation-mode .classhead,.presentation-mode .qr,.presentation-mode .report-area>.kpis,.presentation-mode .print-heading,.presentation-mode .no-print{display:none!important}
+.presentation-mode .content{min-width:0}
+.presentation-mode .charts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.presentation-exit{position:fixed;right:18px;top:14px;z-index:1000;box-shadow:0 3px 14px #102b4926}
+@media(max-width:850px){.presentation-mode .charts-grid{grid-template-columns:1fr}}
