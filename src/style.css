@@ -15,6 +15,7 @@
 .answer-distribution span{background:#f3f6fa;padding:5px 8px;border-radius:5px}
 @media print{
  @page{size:A4;margin:14mm}
+ .print-heading,.report-area>.kpis{display:none!important}
  body{background:#fff!important;color:#111}
  body *{visibility:hidden!important}
  .report-area,.report-area *{visibility:visible!important}
