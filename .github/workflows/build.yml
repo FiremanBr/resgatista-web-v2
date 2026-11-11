@@ -1,8 +1,8 @@
-name: Build Resgatista Web 2.0
+name: Validate Resgatista Web 3.0
 
 on:
   push:
-    branches: [main]
+    branches: [main, feature/resgatista-web-3.0-clean]
   pull_request:
     branches: [main]
   workflow_dispatch:
