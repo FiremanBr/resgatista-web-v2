@@ -1,8 +1,8 @@
-# Resgatista Web 2.0 — interface inicial
+# Resgatista Web 3.0
 
-O banco e a Edge Function já foram preparados no Supabase. Esta pasta contém a interface React/Vite.
+Plataforma de avaliações do Resgatista, evoluída a partir da versão Web 2.0. Esta versão preserva os recursos existentes e acrescenta o modo de apresentação dos resultados ao vivo.
 
-## O que já está contemplado
+## Recursos
 - Login de instrutor pelo Supabase Auth.
 - Criação e listagem de turmas.
 - Cadastro de até 20 questões por JSON.
@@ -12,6 +12,7 @@ O banco e a Edge Function já foram preparados no Supabase. Esta pasta contém a
 - Painel de resultados, notas e estatísticas por questão.
 - Atualização em tempo real.
 - Exclusão individual e reinicialização com PIN.
+- Modo de apresentação em tela cheia, com indicadores da turma e desempenho por questão.
 
 ## Configuração local
 1. Instale Node.js LTS.
