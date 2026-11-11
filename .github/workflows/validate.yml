@@ -1,9 +1,9 @@
-name: Validate Resgatista Web 2.0
+name: Validate Resgatista Web 3.0
 
 on:
   push:
     branches:
-      - feature/painel-projecao
+      - feature/resgatista-web-3.0
   pull_request:
     branches:
       - main
