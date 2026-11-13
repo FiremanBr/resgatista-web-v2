@@ -149,7 +149,7 @@
 
 /* Contagem compacta de acertos e erros acima das barras */
 .question-track-wrap{position:relative;min-width:0;height:27px;padding-top:12px;display:flex;align-items:flex-end}
-.question-track-wrap .question-performance-track{width:100%;height:10px;flex:0 0 10px}
+.question-track-wrap .question-performance-track{width:100%;height:10px;flex:1 1 auto;min-width:0}
 .question-track-count{position:absolute;top:0;transform:translateX(-50%);font-size:9px;line-height:10px;font-weight:800;white-space:nowrap;padding:0 2px;border-radius:3px;background:#fff;z-index:1}
 .question-track-count.correct-count{color:#167647}
 .question-track-count.wrong-count{color:#b83232}
