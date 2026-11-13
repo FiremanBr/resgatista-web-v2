@@ -5,7 +5,7 @@ import {createClient, type Session} from '@supabase/supabase-js';
 
 const url=import.meta.env.VITE_SUPABASE_URL as string, key=import.meta.env.VITE_SUPABASE_ANON_KEY as string;
 const sb=createClient(url||'',key||'');
-async function call(body:Record<string,unknown>){const {data,error}=await sb.functions.invoke('resgatista-v2-api',{body});if(error)throw new Error(error.message);if(data?.error)throw new Error(data.error);return data;}
+async function call(body:Record<string,unknown>){const {data,error}=await sb.functions.invoke('resgatista-v2-api',{body});if(error){let message=error.message;try{const response=(error as any).context;const payload=response?.clone?await response.clone().json():null;if(payload?.error)message=String(payload.error);else if(payload?.message)message=String(payload.message)}catch{}throw new Error(message)}if(data?.error)throw new Error(data.error);return data;}
 type Cl={id:string;code:string;title:string;lesson_date:string|null;status:string;template_id?:string|null};
 type Q={id?:string;position?:number;prompt:string;options:string[];correct_option?:number};
 type A={id:string;student_name:string;score:number;total_questions:number;grade:number;submitted_at:string};
