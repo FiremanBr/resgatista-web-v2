@@ -135,3 +135,13 @@
 
 /* Histórico de provas e edição direta de questões */
 .history-item{display:grid;gap:6px;padding:9px;border:1px solid #e6edf4;border-radius:9px;background:#f7f9fc}.history-item.selected{border-color:#80b2e5;background:#eef6ff}.history-item>.class{padding:5px;background:transparent}.history-item>.outline{justify-self:start;font-size:11px;padding:7px 10px}.question-editor textarea{min-height:280px;font-family:monospace}.question-editor .buttons{justify-content:flex-end}
+
+
+/* Alternativas completas na análise detalhada */
+.answer-distribution{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:7px!important;margin-top:12px!important;font-size:12px!important;color:#33465c!important}
+.answer-distribution .answer-option{display:flex!important;align-items:flex-start!important;justify-content:space-between!important;gap:12px!important;flex-wrap:wrap!important;background:#f6f8fb!important;border:1px solid #e5ebf2!important;border-radius:7px!important;padding:9px 11px!important;white-space:normal!important}
+.answer-distribution .answer-option-label{display:block!important;flex:1 1 300px!important;min-width:0!important;line-height:1.45!important;color:#33465c!important;background:transparent!important;padding:0!important}
+.answer-distribution .answer-option-label b{color:#1765ad!important;margin-right:4px}
+.answer-distribution .answer-option-label strong{color:#167647!important;font-size:10px!important;letter-spacing:.04em}
+.answer-distribution .answer-option-count{flex:0 0 auto!important;color:#64748b!important;font-size:10px!important;white-space:nowrap!important;background:transparent!important;padding:0!important}
+.answer-distribution .answer-correct{background:#effaf3!important;border-color:#b9e2c7!important}
